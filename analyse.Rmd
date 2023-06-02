@@ -1,0 +1,20 @@
+---
+title: "Analyse data_clean.csv"
+author: "Dorian HUGONNET"
+date: "2023-05-18"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r analyse}
+data = read.csv('data/data_clean.csv', sep = ';')
+head(data)
+```
+
+```{r boxplot, include=FALSE}
+boxplot(data$Consommation..MW.,data$Datetime)
+```
