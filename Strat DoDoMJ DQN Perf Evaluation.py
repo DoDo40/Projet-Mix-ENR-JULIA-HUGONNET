@@ -77,8 +77,8 @@ prod_res_negatif = np.where(prodRes < 0, prodRes, 0)
 while not time_step.is_last():
     i += 1
     if prodRes[i] > 0:
-        if (0 <= prodRes[i] < 50):
-            if prodRes[i] - prodRes[i-1] < 15:
+        if (0 <= prodRes[i] < 37.74):
+            if prodRes[i] - prodRes[i-1] < 9.7:
                 action = 0
 
             else:
